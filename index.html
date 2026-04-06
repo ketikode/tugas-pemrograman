@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Sederhana</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        .container {
+            display: flex;
+            flex: 1;
+        }
+        aside {
+            background-color: #f4f4f4;
+            width: 250px;
+            padding: 1rem;
+            border-right: 1px solid #ddd;
+        }
+        article {
+            flex: 1;
+            padding: 1rem;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: auto;
+        }
+        @media (max-width: 600px) {
+            .container {
+                flex-direction: column;
+            }
+            aside {
+                width: auto;
+                border-right: none;
+                border-bottom: 1px solid #ddd;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Header Situs</h1>
+    </header>
+
+    <div class="container">
+        <aside>
+            <h3>Sidebar</h3>
+            <ul>
+                <li><a href="#">Link 1</a></li>
+                <li><a href="#">Link 2</a></li>
+                <li><a href="#">Link 3</a></li>
+            </ul>
+        </aside>
+
+        <article>
+            <h2>Judul Artikel Utama</h2>
+            <p>Ini adalah bagian artikel. Di sini Anda bisa menaruh konten utama situs Anda, seperti berita, postingan blog, atau informasi penting lainnya.</p>
+            <p>Struktur ini menggunakan <strong>Flexbox</strong> agar layout sidebar dan artikel terlihat sejajar secara horizontal secara otomatis.</p>
+        </article>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Hak Cipta Terpelihara</p>
+    </footer>
+
+</body>
+</html>
